@@ -1,0 +1,121 @@
+.container {
+  font-family: 'Montserrat', sans-serif; /* Modern, clean font */
+  padding: 50px;
+  max-width: 1400px;
+  margin: 50px auto;
+  background-color: #f4f8fb; /* Soft background */
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #384964; /* Deep blue heading */
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.8em;
+  letter-spacing: 1px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 35px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+th, td {
+  background-color: white;
+  padding: 20px 25px;
+  text-align: left;
+  border-bottom: 1px solid #e8e8e8; /* Subtle row separation */
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  vertical-align: middle; /* Align text vertically in the middle */
+}
+
+th {
+  background-color: #e6f7ff; /* Light blue header */
+  font-weight: 600;
+  color: #2b6cb0; /* Blue header text */
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+tr:last-child td {
+  border-bottom: none; /* Remove border from the last row */
+}
+
+tr:hover td {
+  background-color: #f0f9ff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-controls {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-controls label {
+  margin-right: 20px;
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.pagination-controls select,
+.pagination-controls button {
+  padding: 14px 25px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease-in-out, box-shadow 0.3s ease;
+  font-weight: 600;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagination-controls select {
+  padding: 14px;
+  background-color: #e2e8f0; /* Light gray select */
+  color: #4a5568;
+}
+
+.pagination-controls button {
+  background-color: #63b3ed; /* Light blue button */
+  color: white;
+}
+
+.pagination-controls button:disabled {
+  background-color: #cbd5e0;
+  color: #718096;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+.pagination-controls button:not(:disabled):hover {
+  background-color: #4299e1;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pagination-controls span {
+  margin: 0 40px;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+/* Fix jumpiness */
+table td {
+  word-break: break-word; /* Prevent long words from breaking layout */
+  min-width: 100px; /* Set a minimum width for columns */
+}
+
+/* Optional: Add some spacing to the cells*/
+table td, th {
+    padding: 15px;
+}
